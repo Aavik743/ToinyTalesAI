@@ -1,0 +1,101 @@
+# Python-specific
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# PyCharm-specific
+.idea/
+
+# VS Code-specific
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Testing
+.coverage
+.htmlcov/
+.pytest_cache/
+
+# Logs and databases
+*.log
+*.sqlite
+db.sqlite3
+instance/
+flask_shell.pyc
+app.db
+
+# Local development
+.env
+.env.local
+tmp/
+cache/
+
+# System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows-specific
+Desktop.ini
+[DS_Store]?
+
+# Additional Files
+*.swp
+*.swo
+
+# Coverage reports
+.coverage
+coverage.xml
+htmlcov/
+.pytest_cache/
+
+# Testing files
+pytest.json
+test-results.xml
+
+# Project-specific
+instance/
+migrations/
+*.csv
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.doc
+*.docx
+*.pdf
+*.zip
+*.rar
+*.7z

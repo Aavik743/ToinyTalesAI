@@ -1,0 +1,192 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 2%;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #1a1a2e, #16213e);
+    color: #e6e6e6;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    color: #ffd700;
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+}
+
+.tagline {
+    color: #a8dadc;
+    font-style: italic;
+}
+
+/* Form styling */
+.story-creator {
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #a8dadc;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #4a4a4a;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+button {
+    background: #e63946;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: transform 0.2s, background 0.2s;
+    width: 100%;
+}
+
+button:hover {
+    background: #f94144;
+    transform: scale(1.02);
+}
+
+/* Story output section */
+.story-output {
+    max-width: 800px;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+#generatedStory {
+    white-space: pre-wrap;
+    line-height: 1.6;
+    margin: 2rem 0;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    .story-creator, .story-output {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .story-creator, .story-output {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .story-creator, .story-output {
+        padding: 1rem;
+        margin: 0 1rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .tagline {
+        font-size: 1.2rem;
+    }
+    
+    input, textarea {
+        padding: 0.7rem;
+    }
+    
+    button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5%;
+    }
+    
+    .story-creator, .story-output {
+        padding: 1rem;
+        margin: 0;
+    }
+    
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+    
+    input, textarea {
+        padding: 0.6rem;
+    }
+    
+    button {
+        padding: 0.7rem 1.3rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        padding: 5%;
+    }
+    
+    .story-creator, .story-output {
+        padding: 0.8rem;
+        margin: 0;
+    }
+    
+    h1 {
+        font-size: 1.4rem;
+    }
+    
+    .tagline {
+        font-size: 0.9rem;
+    }
+    
+    input, textarea {
+        padding: 0.5rem;
+    }
+    
+    button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+}
